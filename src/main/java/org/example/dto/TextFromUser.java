@@ -1,8 +1,8 @@
-package org.example;
+package org.example.dto;
 
 public class TextFromUser {
 
-    String text;
+    private String text;
 
     public String getText() {
         return text;
