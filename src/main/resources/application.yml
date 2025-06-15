@@ -1,16 +1,17 @@
 spring:
   ai:
     openai:
-      api-key: {api-key}
+      api-key: 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
       base-url: https://openrouter.ai/api
       chat:
         options:
-          model: mistralai/mistral-small-3.1-24b-instruct:free
+          model: deepseek/deepseek-chat-v3-0324:free
+    tools:
+      observations:
+        include-content: true
 logging:
   level:
     org:
       springframework:
         ai:
-          chat:
-            client:
-              advisor: debug
+          debug
